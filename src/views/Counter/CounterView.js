@@ -93,7 +93,7 @@ export function CounterView() {
           </div>
           <div style={{ display: "flex", justifyContent: "space-around" }}>
             <button
-              disabled={!clickSet || counter >= goal}
+              disabled={!clickSet || counter >= goal || counter == 0}
               className="counter-form__button counter-form__button_step"
               type="button"
               onClick={substractButton}
